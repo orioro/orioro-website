@@ -1,0 +1,43 @@
+@import '../../node_modules/@orioro/web-ui-styles/less/base.less';
+@import '../../node_modules/@orioro/web-ui-styles/less/colors.less';
+@import '../../node_modules/@orioro/web-ui-styles/less/displays.less';
+@import '../../node_modules/@orioro/web-ui-styles/less/flex.less';
+@import '../../node_modules/@orioro/web-ui-styles/less/grid.less';
+@import '../../node_modules/@orioro/web-ui-styles/less/lists.less';
+@import '../../node_modules/@orioro/web-ui-styles/less/links.less';
+@import '../../node_modules/@orioro/web-ui-styles/less/spacing.less';
+@import '../../node_modules/@orioro/web-ui-styles/less/typography.less';
+@import '../../node_modules/@orioro/web-ui-styles/less/website-containers.less';
+
+//
+// Base
+//
+figure {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  font-size: 1rem;
+  color: @grey-2;
+}
+
+.mx__colors();
+.mx__displays();
+.mx__flex();
+.mx__grid();
+.mx__lists();
+.mx__links();
+.mx__spacing();
+.mx__typography();
+.mx__website-containers();
+
+//
+// Variables must be imported last
+//
+@import './variables.less';

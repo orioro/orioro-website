@@ -1,20 +1,18 @@
-import React from "react"
-import { Link } from "gatsby"
+import React from 'react'
 
-import Layout from "../components/layout"
-import Image from "../components/image"
-import SEO from "../components/seo"
+import { Layout } from '../components/layout'
+import { SEO } from '../components/seo'
+import { ContentSection } from '../components/content-section/content-section'
 
 const IndexPage = () => (
   <Layout>
-    <SEO title="Home" />
-    <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
-    <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
-      <Image />
-    </div>
-    <Link to="/page-2/">Go to page 2</Link>
+    <SEO title='Home' />
+    <ContentSection>
+      <h1>Criamos protótipos de produtos e serviços digitais e validamos com o público-alvo. O mais rápido possível.</h1>
+    </ContentSection>
+    <ContentSection>
+      <h2>Ajudamos empreendedores e organizações a projetar serviços digitais (apps, plataformas, sistemas), validando com pessoas reais antes mesmo de começar a desenvolver</h2>
+    </ContentSection>
   </Layout>
 )
 
