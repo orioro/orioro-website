@@ -9,10 +9,10 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { useStaticQuery, graphql } from 'gatsby'
 
-import { Header } from './header'
-import { Footer } from './footer'
+import { Header } from '../Header/Header'
+import { Footer } from '../Footer/Footer'
 import './layout.less'
-import '../less/framework.less'
+import '../../less/framework.less'
 
 export const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
@@ -30,7 +30,7 @@ export const Layout = ({ children }) => {
       <Header
         siteTitle={data.site.siteMetadata.title}
       />
-      <div>{children}</div>
+      <div className='oo-content-sections-container'>{children}</div>
       <Footer />
     </React.Fragment>
   )

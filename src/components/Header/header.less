@@ -1,0 +1,32 @@
+@import '../../../node_modules/@orioro/web-ui-styles/less/spacing.less';
+@import '../../../node_modules/@orioro/web-ui-styles/less/responsive.less';
+@import '../../less/variables.less';
+
+#main-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+
+  .mx__media-breakpoint-sm({
+    height: @header-height-mobile;
+  }, {
+    height: @header-height-desktop;
+  });
+
+  > div {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+#main-logo {
+  height: 50%;
+
+  > img {
+    height: 100%;
+    width: auto;
+  }
+}

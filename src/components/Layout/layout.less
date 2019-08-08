@@ -1,0 +1,24 @@
+@import '../../../node_modules/@orioro/web-ui-styles/less/spacing.less';
+@import '../../../node_modules/@orioro/web-ui-styles/less/responsive.less';
+@import '../../../node_modules/@orioro/web-ui-styles/less/page-sections.less';
+@import '../../../node_modules/@orioro/web-ui-styles/less/website-containers.less';
+@import '../../../node_modules/@orioro/web-ui-styles/less/rich-text.less';
+
+@import '../../less/variables.less';
+
+.oo-content-sections-container {
+  .mx__media-breakpoint-sm({
+    margin-top: @header-height-mobile;
+  }, {
+    margin-top: @header-height-desktop;
+  });
+
+  .mx__page-sections(
+    1;
+    _name          _ _ _,
+    h1             1 2 0
+    h2;
+    ~'.oo-content-section--transparent';
+    ~'.oo-content-section--with-bg';
+  );
+}

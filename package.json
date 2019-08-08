@@ -6,6 +6,7 @@
   "author": "Kyle Mathews <mathews.kyle@gmail.com>",
   "dependencies": {
     "@orioro/web-ui-styles": "^3.1.1",
+    "classnames": "^2.2.6",
     "gatsby": "^2.13.51",
     "gatsby-image": "^2.2.8",
     "gatsby-plugin-less": "^2.1.2",

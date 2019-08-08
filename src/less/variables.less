@@ -1,14 +1,14 @@
 //
 // Development mode
 //
-// @import '../../node_modules/@orioro/web-ui-styles/less/dev.less';
+@import '../../node_modules/@orioro/web-ui-styles/less/dev.less';
 // @ui--dev-logging: true;
 
 @default-side-padding: 30px;
 @mobile-side-padding: 20px;
 
-@header-height-desktop: 100px;
-@header-height-mobile: 72px;
+@header-height-desktop: 82px;
+@header-height-mobile: 62px;
 
 @z-index-header: 1000;
 
@@ -36,26 +36,16 @@
 ////////////
 // Colors //
 ////////////
+@black: black;
 @white: #ffffff;
-@pink: #ff7ebf;
-@light-grey: #f0f0f0;
-@grey: #b6b6b6;
-@azure: #03afed;
-@grey-1: #787878;
-@grey-2: #494949;
-@marigold: #fbc201;
-@light-olive-green: #96ce54;
+@light-grey: #ebebeb;
+@orange: #ff3700;
 
 @ui--colors:
+  black             @black,
   white             @white,
-  pink              @pink              @white,
-  grey              @grey              @white,
-  azure             @azure             @white,
-  grey-2            @grey-2            @white,
-  marigold          @marigold          @white,
-  grey-1            @grey-1            @white,
   light-grey        @light-grey,
-  light-olive-green @light-olive-green @white;
+  orange            @orange;
 
 ////////////////
 // Typography //
@@ -67,7 +57,7 @@
 // [name] [family]
 //
 @serif: ~'Georgia, "Times New Roman", Times, serif';
-@sans-serif: ~'Oxygen, -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol';
+@sans-serif: ~'Roboto, Oxygen, -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol';
 @monospace: ~'SFMono-Regular, Consolas, Liberation Mono, Menlo, Courier, monospace';
 @ui--typography-font-families:
   serif      @serif,
@@ -87,7 +77,7 @@
 @ui--typography-specs:
   _name          _         _               font-family  font-weight line-height letter-spacing,
   h1             2.65rem   2.0625rem       @sans-serif  bold        1.5,
-  h2             2rem      1.5rem          @sans-serif  bold        1.5,
+  h2             2rem      1.5rem          @sans-serif  normal      1.5,
   h3             1.75rem   1.375rem        @sans-serif  bold        1.5,
   h4             1.125rem  1rem            @sans-serif  bold        1.5,
   h5             0.875rem  0.75rem         @sans-serif  bold        1.5,
