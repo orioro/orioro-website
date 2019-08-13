@@ -17,15 +17,18 @@ const ProjetosPage = ({
     <SEO title='Projetos' />
 
     <ContentSection>
-      <div className='row'>
+      <div className='row p-top-4'>
         <div className='col-12'>
           <Link
-            className='link link--icon-left'
+            className='link link--icon-left m-bottom-4'
             to='/'>
             <ArrowBackIcon />
             Home
           </Link>
+          <h1 className='h1 m-bottom-4'>Projetos</h1>
+        </div>
 
+        <div className='col-12'>
           <ul className='list list--3'>
             {data.projects.edges.map(({ node }) => (
               <li key={node.id}>

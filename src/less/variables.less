@@ -4,10 +4,14 @@
 @import '../../node_modules/@orioro/web-ui-styles/less/dev.less';
 // @ui--dev-logging: true;
 
-@default-side-padding: 30px;
-@mobile-side-padding: 20px;
+// @default-side-padding: 30px;
+// @mobile-side-padding: 20px;
+@ui--website-max-width-xl: 1400px;
 
-@header-height-desktop: 82px;
+@ui--website-side-padding-xl: 50px;
+@ui--website-side-padding-md: 20px;
+
+@header-height-desktop: 70px;
 @header-height-mobile: 62px;
 
 @z-index-header: 1000;
@@ -23,7 +27,7 @@
 /////////////
 @ui--spacing-units:
   _name _     _,
-  1     120px 60px,
+  1     120px 80px,
   2     100px 50px,
   3     80px  60px,
   4     60px  30px,
@@ -31,7 +35,7 @@
   6     40px  30px,
   7     30px  20px,
   8     20px  15px,
-  10    16px  10px;
+  10    10px  8px;
 
 ////////////
 // Colors //
@@ -56,8 +60,8 @@
 // [name-and-family]
 // [name] [family]
 //
-@serif: ~'Georgia, "Times New Roman", Times, serif';
-@sans-serif: ~'"Nunito Sans", Oxygen, -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol';
+@serif: ~'"Playfair Display", Georgia, "Times New Roman", Times, serif';
+@sans-serif: ~'Assistant, Oxygen, -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol';
 @monospace: ~'SFMono-Regular, Consolas, Liberation Mono, Menlo, Courier, monospace';
 @ui--typography-font-families:
   serif      @serif,
@@ -76,10 +80,10 @@
 
 @ui--typography-specs:
   _name          _         _               font-family  font-weight line-height letter-spacing,
-  h1             2.5rem    2.3rem          @sans-serif  bold        1.25,
-  h2             1.9rem    1.6rem          @sans-serif  normal      1.3,
-  h3             1.7rem    1.3rem          @sans-serif  bold        1.4,
-  h4             1.2rem    1.1rem          @sans-serif  bold        1.5,
+  h1             2.5rem    2rem            @sans-serif  bold        1.25,
+  h2             1.9rem    1.5rem          @sans-serif  normal      1.3,
+  h3             1.7rem    1.2rem          @sans-serif  bold        1.4,
+  h4             1.2rem    1.1rem          @sans-serif  normal      1.5,
   h5             0.875rem  0.75rem         @sans-serif  bold        1.5,
   h6,
   text-1         1.5rem    1.5rem          @sans-serif,

@@ -6,7 +6,7 @@
 //
 .oo-composition-vertical-spacing {
   .mx__vertical-spacing-system(
-    7;
+    10;
     _name                   _ _ _,
     ~'.btn'                 6 6 7,
     ~'.wp-block-oo-button'
@@ -15,7 +15,7 @@
 
 .oo-composition-vertical-spacing-compact {
   .mx__vertical-spacing-system(
-    8;
+    10;
     _name                   _ _ _,
     ~'.btn'                 6 6 8,
     ~'.wp-block-oo-button'
@@ -25,7 +25,15 @@
 .oo-project-thumbnail {
   text-decoration: none;
 
+  .gatsby-image-wrapper {
+    transition: box-shadow ease 0.3s;
+  }
+
   &:hover {
     text-decoration: underline;
+
+    .gatsby-image-wrapper {
+      box-shadow: 1px 1px 10px 0px rgba(0,0,0,0.25);
+    }
   }
 }

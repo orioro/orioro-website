@@ -24,16 +24,20 @@ export default ({
 
   return <Layout>
     <SEO title={project.frontmatter.title} />
-    <ContentSection backgroundColor={headingSectionBg}>
-      <Link
-        className='link link--icon-left'
-        to='/projetos'>
-        <ArrowBackIcon />
-        Projetos
-      </Link>
-      <h1>{project.frontmatter.title}</h1>
+    <ContentSection>
+      <div className='row p-top-4'>
+        <div className='col-12'>
+          <Link
+            className='link link--icon-left m-bottom-4'
+            to='/projetos'>
+            <ArrowBackIcon />
+            Projetos
+          </Link>
+          <h1>{project.frontmatter.title}</h1>
+        </div>
+      </div>
       <div className='row m-bottom-8'>
-        <div className='col-md-9 offset-md-3'>
+        <div className='col-md-9 offset-md-3 m-bottom-4'>
           <div
             className='oo-rich-text m-top-4'
             dangerouslySetInnerHTML={{ __html: project.html }} />
@@ -45,11 +49,11 @@ export default ({
       <div className='row'>
         <div className='offset-md-3' />
         {project.frontmatter.year ? <div className='col-md-3'>
-          <h4>Ano</h4>
+          <h4 className='m-bottom-10'><strong>Ano</strong></h4>
           <div>{project.frontmatter.year}</div>
         </div> : null}
         {project.frontmatter.scope ? <div className='col-md-3'>
-          <h4>Escopo</h4>
+          <h4 className='m-bottom-10'><strong>Escopo</strong></h4>
           <ul className='list-reset'>
             {project.frontmatter.scope.map(({ title, description }, index) => (
               <li
@@ -61,7 +65,7 @@ export default ({
           </ul>
         </div> : null}
         {project.frontmatter.website ? <div className='col-md-3'>
-          <h4>Site online</h4>
+          <h4 className='m-bottom-10'><strong>Site online</strong></h4>
           <a
             className='link link--icon-right'
             href={project.frontmatter.website}
@@ -89,7 +93,7 @@ export default ({
       : null}
 
     <ContentSection>
-      <h2 className='h2 m-bottom-7'>
+      <h2 className='h1 m-bottom-4'>
         Conheça outros projetos:
       </h2>
       <ul className='list list--3'>
