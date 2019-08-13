@@ -38,7 +38,7 @@ export const MainMenu = ({}) => {
       menuOpen={menuOpen}
       onClick={() => setMenuOpen(!menuOpen)}
     />
-    {ReactDOM.createPortal(
+    {typeof document !== 'undefined' && ReactDOM.createPortal(
       <div
         id='main-menu'>
         <div className='website-side-padding website-max-width p-top-5'>

@@ -11,8 +11,13 @@ import ArrowForwardIcon from '@material-ui/icons/ArrowForward'
 import { ProjectThumbnail } from '../../components/ProjectThumbnail/ProjectThumbnail'
 
 export default ({
-  data: { project, relatedProjects }
+  data,
+  ...props
 }) => {
+
+
+  console.log(data, props)
+  const { project, relatedProjects } = data
 
   const headingSectionBg = project.frontmatter.headingSectionBg || false
   const imageSectionBg = project.frontmatter.imageSectionBg || false
@@ -45,7 +50,7 @@ export default ({
         </div> : null}
         {project.frontmatter.scope ? <div className='col-md-3'>
           <h4>Escopo</h4>
-          <ul className='list'>
+          <ul className='list-reset'>
             {project.frontmatter.scope.map(({ title, description }, index) => (
               <li
                 key={index}

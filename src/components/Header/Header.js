@@ -23,7 +23,9 @@ const useWindowScrollTop = () => {
 
   useEffect(() => {
     const updateWindowScrollTop = () => {
-      setScrollTop(window.document.documentElement.scrollTop)
+      const scrollTop = Math.max(window.pageYOffset, document.documentElement.scrollTop, document.body.scrollTop)
+
+      setScrollTop(scrollTop)
     }
 
     window.addEventListener('scroll', updateWindowScrollTop)
@@ -42,6 +44,8 @@ export const Header = ({ siteTitle }) => {
   const previousScrollTop = usePrevious(scrollTop)
 
   const { height } = useRect(headerRef)
+
+  console.log(height, previousScrollTop, scrollTop)
 
   return <header
     ref={headerRef}

@@ -1,6 +1,6 @@
 ---
-title: Yoyo
-date: "2015-05-01T22:12:03.284Z"
+title: Yoyo - Aplicativo com atividades para a família
+date: "2019-05-01T22:12:03.284Z"
 description: "App"
 featuredImage: './images/yoyo-poster-A2-frente-20190625.jpg'
 images:
