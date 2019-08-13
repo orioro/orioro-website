@@ -11,12 +11,8 @@ import ArrowForwardIcon from '@material-ui/icons/ArrowForward'
 import { ProjectThumbnail } from '../../components/ProjectThumbnail/ProjectThumbnail'
 
 export default ({
-  data,
-  ...props
+  data
 }) => {
-
-
-  console.log(data, props)
   const { project, relatedProjects } = data
 
   const headingSectionBg = project.frontmatter.headingSectionBg || false

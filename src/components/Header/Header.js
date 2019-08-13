@@ -45,8 +45,6 @@ export const Header = ({ siteTitle }) => {
 
   const { height } = useRect(headerRef)
 
-  console.log(height, previousScrollTop, scrollTop)
-
   return <header
     ref={headerRef}
     id='main-header'

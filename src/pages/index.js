@@ -119,10 +119,10 @@ const HomePage = ({
                 <h3 className='h3 m-bottom-8'>3. Desenvolver protótipos e testar</h3>
                 <div className='oo-rich-text'>
                   <p>
-                    De todas as possibilidades, quais são possíveis? Qual é a melhor?
+                    De todas as ideias, quais são possíveis? Qual é a melhor?
                   </p>
                   <p>
-                    Em conjunto com nossos clientes, selecionamos as ideias mais promissoras e desenvolvemos protótipos para testar com o público-alvo: <strong>na prática</strong>, o que funciona e o que não funciona? O que as pessoas acham? Como se comportam com o produto em mãos?
+                    Em conjunto com nossos clientes, selecionamos os conceitos mais promissores e desenvolvemos protótipos para testar com o público-alvo: <strong>na prática</strong>, o que funciona e o que não funciona? O que as pessoas acham? Como se comportam com o produto em mãos?
                   </p>
                     {/*
                        Quais funcionam? Quais devem ser descartadas?
