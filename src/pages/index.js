@@ -10,6 +10,8 @@ import SubDirectoryArrowRightIcon from '@material-ui/icons/SubDirectoryArrowRigh
 
 import { ProjectThumbnail } from '../components/ProjectThumbnail/ProjectThumbnail'
 
+import './style.less'
+
 const HomePage = ({
   data
 }) => {
@@ -27,7 +29,7 @@ const HomePage = ({
           </h1>
         </div>
       </div>
-      <div className='row m-top-3'>
+      <div className='row m-top-4'>
         <div className='col-sm-7 offset-sm-1'>
           <h2>
             Ajudamos empresas e organizações a <strong>criar tecnologia com base no comportamento das pessoas</strong>
