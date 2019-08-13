@@ -1,0 +1,67 @@
+@import '../../../node_modules/@orioro/web-ui-styles/less/spacing.less';
+@import '../../../node_modules/@orioro/web-ui-styles/less/lists.less';
+@import '../../../node_modules/@orioro/web-ui-styles/less/responsive.less';
+@import '../../less/variables.less';
+
+body.main-menu-open {
+  overflow: hidden;
+}
+
+#main-menu {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+
+  display: none;
+
+  background-color: @white;
+
+  .mx__media-breakpoint-sm({
+    top: @header-height-mobile;
+  }, {
+    top: @header-height-desktop;
+  });
+
+  body.main-menu-open & {
+    display: block;
+  }
+
+  nav {
+    > ul {
+      .mx__list-reset();
+
+      > li {
+        .mx__spacing-m-bottom(8);
+
+        > a {
+          text-decoration: none;
+          position: relative;
+          font-size: 25px;
+
+          &::after {
+            content: '';
+            position: absolute;
+            top: calc(100% + 2px);
+            left: 0;
+            right: 0;
+            height: 5px;
+
+            background-color: @orange;
+
+            transform: scaleX(0);
+            transform-origin: top left;
+            transition: transform .3s ease;
+          }
+
+          &:hover,
+          &.active {
+            &::after {
+              transform: scaleX(1);
+            }
+          }
+        }
+      }
+    }
+  }
+}

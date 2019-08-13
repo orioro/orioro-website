@@ -1,0 +1,31 @@
+@import '../../../node_modules/@orioro/web-ui-styles/less/spacing.less';
+@import '../../../node_modules/@orioro/web-ui-styles/less/responsive.less';
+
+//
+// Composition vertical spacing profiles
+//
+.oo-composition-vertical-spacing {
+  .mx__vertical-spacing-system(
+    7;
+    _name                   _ _ _,
+    ~'.btn'                 6 6 7,
+    ~'.wp-block-oo-button'
+  );
+}
+
+.oo-composition-vertical-spacing-compact {
+  .mx__vertical-spacing-system(
+    8;
+    _name                   _ _ _,
+    ~'.btn'                 6 6 8,
+    ~'.wp-block-oo-button'
+  );
+}
+
+.oo-project-thumbnail {
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}

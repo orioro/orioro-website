@@ -7,18 +7,30 @@
 @import '../../less/variables.less';
 
 .oo-content-sections-container {
-  .mx__media-breakpoint-sm({
-    margin-top: @header-height-mobile;
-  }, {
-    margin-top: @header-height-desktop;
-  });
+  > *:first-child {
+    .mx__media-breakpoint-sm({
+      padding-top: @header-height-mobile;
+    }, {
+      padding-top: @header-height-desktop;
+    });
+  }
 
   .mx__page-sections(
     1;
-    _name          _ _ _,
-    h1             1 2 0
+    _name                                _ _ _,
+    h1                                   1 2 0
     h2;
     ~'.oo-content-section--transparent';
     ~'.oo-content-section--with-bg';
   );
+
+  > .oo-content-section {
+    //
+    // Last section
+    // TODO: incorporate into framework
+    //
+    &:last-child {
+      .mx__spacing-p-bottom(1);
+    }
+  }
 }

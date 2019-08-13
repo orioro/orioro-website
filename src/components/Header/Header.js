@@ -1,16 +1,54 @@
+import React, { useState, useEffect, useRef } from 'react'
 import PropTypes from 'prop-types'
-import React from 'react'
+import classnames from 'classnames'
 import { Link } from 'gatsby'
 import logoPath from '../../images/logo-orioro.svg'
 
-import { MenuButton } from './MenuButton'
+import { useRect } from '../../util'
+
+import { MainMenu } from '../MainMenu/MainMenu'
 
 import './header.less'
 
-export const Header = ({ siteTitle }) => (
-  <header
+function usePrevious(value) {
+  const ref = useRef();
+  useEffect(() => {
+    ref.current = value;
+  });
+  return ref.current;
+}
+
+const useWindowScrollTop = () => {
+  const [scrollTop, setScrollTop] = useState(0)
+
+  useEffect(() => {
+    const updateWindowScrollTop = () => {
+      setScrollTop(window.document.documentElement.scrollTop)
+    }
+
+    window.addEventListener('scroll', updateWindowScrollTop)
+
+    return () => {
+      window.removeEventListener('scroll', updateWindowScrollTop)
+    }
+  }, [])
+
+  return scrollTop
+}
+
+export const Header = ({ siteTitle }) => {
+  const headerRef = useRef(null)
+  const scrollTop = useWindowScrollTop()
+  const previousScrollTop = usePrevious(scrollTop)
+
+  const { height } = useRect(headerRef)
+
+  return <header
+    ref={headerRef}
     id='main-header'
-    className='bg-white'>
+    className={`bg-white ${classnames({
+      'far-from-top': height > 0 && previousScrollTop < scrollTop && scrollTop > height,
+    })}`}>
     <div className='website-side-padding website-max-width'>
       <Link
         to='/'
@@ -22,10 +60,10 @@ export const Header = ({ siteTitle }) => (
         />
       </Link>
 
-      <MenuButton />
+      <MainMenu />
     </div>
   </header>
-)
+}
 
 Header.propTypes = {
   siteTitle: PropTypes.string,

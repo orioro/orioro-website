@@ -5,6 +5,8 @@
   "version": "0.1.0",
   "author": "Kyle Mathews <mathews.kyle@gmail.com>",
   "dependencies": {
+    "@material-ui/core": "^4.3.2",
+    "@material-ui/icons": "^4.2.1",
     "@orioro/web-ui-styles": "^3.1.1",
     "classnames": "^2.2.6",
     "gatsby": "^2.13.51",
@@ -14,7 +16,9 @@
     "gatsby-plugin-offline": "^2.2.4",
     "gatsby-plugin-react-helmet": "^3.1.3",
     "gatsby-plugin-sharp": "^2.2.9",
+    "gatsby-remark-images": "^3.1.8",
     "gatsby-source-filesystem": "^2.1.8",
+    "gatsby-transformer-remark": "^2.6.12",
     "gatsby-transformer-sharp": "^2.2.5",
     "less": "^3.9.0",
     "prop-types": "^15.7.2",

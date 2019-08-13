@@ -7,7 +7,9 @@ export const ContentSection = ({ backgroundColor, children }) => {
   const BACKGROUND_COLOR_CLASSES = backgroundColorClassName ? {
     'oo-content-section--with-bg': true,
     [backgroundColorClassName]: true,
-  } : {}
+  } : {
+    'oo-content-section--transparent': true
+  }
 
   return <section
     className={classnames({

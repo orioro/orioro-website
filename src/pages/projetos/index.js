@@ -4,41 +4,79 @@ import { Link } from 'gatsby'
 import { Layout } from '../../components/Layout/Layout'
 import { SEO } from '../../components/SEO/SEO'
 import { ContentSection } from '../../components/ContentSection/ContentSection'
-import { useStaticQuery, graphql } from 'gatsby'
+import { graphql } from 'gatsby'
+import Img from 'gatsby-image'
+import ArrowBackIcon from '@material-ui/icons/ArrowBack'
 
-const ProjetosPage = () => {
-  const data = useStaticQuery(graphql`
-    query {
-      allFile(filter: {relativePath: {regex: "/^projetos/.*/index.js$/"}}) {
-        edges {
-          node {
-            id
-            relativePath
-          }
-        }
-      }
-    }
-  `)
+import { ProjectThumbnail } from '../../components/ProjectThumbnail/ProjectThumbnail'
 
-  console.log(data)
-
+const ProjetosPage = ({
+  data
+}) => {
   return <Layout>
-    <SEO title='Home' />
+    <SEO title='Projetos' />
 
     <ContentSection>
       <div className='row'>
-        <ul className='list list--3'>
-          {data.allFile.edges.map(project => {
-            return <li key={project.node.id}>
-              <Link to={project.node.relativePath}>
-                {project.node.relativePath}
-              </Link>
-            </li>
-          })}
-        </ul>
+        <div className='col-12'>
+          <Link
+            className='link link--icon-left'
+            to='/'>
+            <ArrowBackIcon />
+            Home
+          </Link>
+
+          <ul className='list list--3'>
+            {data.projects.edges.map(({ node }) => (
+              <li key={node.id}>
+                <ProjectThumbnail
+                  location={node.fields.slug}
+                  title={node.frontmatter.title}
+                  date={node.frontmatter.date}
+                  excerpt={node.excerpt}
+                  featuredImage={node.frontmatter.featuredImage ?
+                    node.frontmatter.featuredImage.childImageSharp.fluid :
+                    null
+                  }
+                />
+              </li>
+            ))}
+          </ul>
+        </div>
       </div>
     </ContentSection>
   </Layout>
 }
 
 export default ProjetosPage
+
+export const query = graphql`
+  query {
+    projects: allMarkdownRemark(
+      sort: { fields: [frontmatter___date], order: DESC }
+      filter: { fields: { slug: { glob: "/projetos/**" } } }
+    ) {
+      totalCount
+      edges {
+        node {
+          id
+          frontmatter {
+            title
+            date(formatString: "DD MM, YYYY")
+            featuredImage {
+              childImageSharp {
+                fluid(maxWidth: 400) {
+                  ...GatsbyImageSharpFluid
+                }
+              }
+            }
+          }
+          excerpt
+          fields {
+            slug
+          }
+        }
+      }
+    }
+  }
+`
