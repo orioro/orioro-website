@@ -17,7 +17,7 @@ images:
 - path: './images/nova-escola-planos-de-aula-slides.png'
   caption: 'test'
 headingSectionBg: white
-imageSectionBg: orange
+imageSectionBg: light-grey
 year: 2018
 scope:
 - title: 'Design de serviço digital'
