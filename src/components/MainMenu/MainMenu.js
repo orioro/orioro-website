@@ -55,7 +55,7 @@ export const MainMenu = ({}) => {
                       <Link
                         to={href}
                         activeClassName='active'
-                        partiallyActive>
+                        partiallyActive={href !== '/'}>
                         {label}
                       </Link>
                     </li>

@@ -15,7 +15,6 @@ images:
 - path: './images/nova-escola-planos-de-aula-filtros.png'
 - path: './images/nova-escola-planos-de-aula-infantil.png'
 - path: './images/nova-escola-planos-de-aula-slides.png'
-  caption: 'test'
 headingSectionBg: white
 imageSectionBg: light-grey
 year: 2018

@@ -35,6 +35,7 @@ const ProjetosPage = ({
                 <ProjectThumbnail
                   location={node.fields.slug}
                   title={node.frontmatter.title}
+                  description={node.frontmatter.description}
                   date={node.frontmatter.date}
                   excerpt={node.excerpt}
                   featuredImage={node.frontmatter.featuredImage ?
@@ -65,6 +66,7 @@ export const query = graphql`
           id
           frontmatter {
             title
+            description
             date(formatString: "DD MM, YYYY")
             featuredImage {
               childImageSharp {

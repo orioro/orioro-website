@@ -33,7 +33,7 @@ const HomePage = ({
       <div className='row m-top-4'>
         <div className='col-sm-7 offset-sm-1'>
           <h2>
-            Ajudamos empresas e organizações a <strong>criar tecnologia</strong> com base no comportamento das <strong>pessoas</strong>
+            Ajudamos empresas e organizações a <strong>criar apps, sites e plataformas</strong> com base no <strong>comportamento das pessoas</strong>
           </h2>
           {/*
 
@@ -61,12 +61,12 @@ const HomePage = ({
                 <h3 className='h3 m-bottom-7 fg-orange'><span>1.</span><br/>
                 Entender o público-alvo</h3>
                 <div className='oo-rich-text'>
+                  <Img fluid={data.image_1_entender.childImageSharp.fluid} />
                   <p>
                     {/* Falar o que é: app, site ou plataforma */}
 
-                    Antes de desenvolver qualquer app, site ou plataforma, é crucial entender as necessidades do público-alvo.
+                    Antes de desenvolver qualquer tecnologia, é crucial entender as necessidades do público-alvo.
                   </p>
-                  <Img fluid={data.image_1_entender.childImageSharp.fluid} />
                   <p>
                     {/* Falar como é factualmente esse passo */}
                     Através de entrevistas e pesquisas em campo, buscamos compreender como as pessoas trabalham, quais desafios enfrentam e como uma nova tecnologia poderá ajudá-las.
@@ -88,12 +88,12 @@ const HomePage = ({
                 <h3 className='h3 m-bottom-7 fg-orange'><span>2.</span><br/>
                 Imaginar soluções</h3>
                 <div className='oo-rich-text'>
+                  <Img fluid={data.image_2_imaginar.childImageSharp.fluid} />
                   <p>
                     {/* Falar como é factualmente esse passo */}
                     {/* Falar de porquê é um diferencial: facilitado, profissionais diversos, complementação de equipe */}
                     Em sessões facilitadas de co-criação, complementamos as equipes de nossos clientes com especialistas e profissionais de tecnologia para discutir e imaginar soluções inovadoras.
                   </p>
-                  <Img fluid={data.image_2_imaginar.childImageSharp.fluid} />
                   <p>
                     {/* Destacar o distanciamento do cotidiano, o ir além, imaginar coisas impossíveis */}
                     Esse é o momento de trazer para a mesa <strong>todas as ideias</strong>: do prático ao futurista, o objetivo é fugir do cotidiano e imaginar o ideal.
@@ -124,10 +124,10 @@ const HomePage = ({
                 <h3 className='h3 m-bottom-7 fg-orange'><span>3.</span><br/>
                 Desenvolver protótipos e testar</h3>
                 <div className='oo-rich-text'>
+                  <Img fluid={data.image_3_testar.childImageSharp.fluid} />
                   <p>
                     De todas as ideias, quais são possíveis? Qual é a melhor?
                   </p>
-                  <Img fluid={data.image_3_testar.childImageSharp.fluid} />
                   <p>
                     Em conjunto com nossos clientes, selecionamos os conceitos mais promissores e desenvolvemos protótipos para testar com o público-alvo: <strong>na prática</strong>, o que funciona e o que não funciona? O que as pessoas acham? Como se comportam com o produto em mãos?
                   </p>
@@ -144,15 +144,15 @@ const HomePage = ({
                 <h3 className='h3 m-bottom-7 fg-orange'><span>4.</span><br/>
                 Decidir com base no comportamento das pessoas</h3>
                 <div className='oo-rich-text'>
+                  <Img fluid={data.image_4_decidir.childImageSharp.fluid} />
                   <p>
                     Ajudamos nossos clientes a tomar decisões estratégicas com base no comportamento real das pessoas:
                   </p>
-                  <Img fluid={data.image_4_decidir.childImageSharp.fluid} />
                   <p>
-                    <strong>Se a recepção foi positiva:</strong><br /><SubDirectoryArrowRightIcon />Investir, aprimorar e desenvolver a tecnologia
+                    <strong>Se a recepção foi positiva:</strong><br />Investir, aprimorar e desenvolver a tecnologia
                   </p>
                   <p>
-                    <strong>Se os resultados foram negativos:</strong><br /><SubDirectoryArrowRightIcon />Rapidamente investigar e projetar novos caminhos
+                    <strong>Se os resultados foram negativos:</strong><br />Rapidamente investigar e projetar novos caminhos
                   </p>
                     {/*
 
@@ -249,6 +249,7 @@ const HomePage = ({
               <ProjectThumbnail
                 location={node.fields.slug}
                 title={node.frontmatter.title}
+                description={node.frontmatter.description}
                 date={node.frontmatter.date}
                 excerpt={node.excerpt}
                 featuredImage={node.frontmatter.featuredImage ?
@@ -287,6 +288,7 @@ export const query = graphql`
           id
           frontmatter {
             title
+            description
             date(formatString: "DD/MM/YYYY")
             featuredImage {
               childImageSharp {

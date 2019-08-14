@@ -23,7 +23,6 @@ export const ProjectThumbnail = ({
       </strong>
       <br />
       {description}
-      Novo site institucional
     </h4>
   </Link>
 )
