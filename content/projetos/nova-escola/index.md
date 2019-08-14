@@ -1,6 +1,7 @@
 ---
-title: Nova Escola - Planos de aula digitais
+title: Nova Escola
 date: "2018-05-06T00:00:00Z"
+description: "Plataforma digital de planos de aula para professores"
 featuredImage: './images/nova-escola-planos-de-aula-slides.png'
 images:
 - path: './images/nova-escola-dinamica.jpg'
@@ -16,7 +17,7 @@ images:
 - path: './images/nova-escola-planos-de-aula-slides.png'
   caption: 'test'
 headingSectionBg: white
-imageSectionBg: orange
+imageSectionBg: light-grey
 year: 2018
 scope:
 - title: 'Design de serviço digital'

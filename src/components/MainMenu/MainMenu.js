@@ -9,6 +9,10 @@ import { MenuButton } from './MenuButton'
 
 const MAIN_MENU_LINKS = [
   {
+    label: 'Home',
+    href: '/'
+  },
+  {
     label: 'Quem somos',
     href: '/sobre'
   },

@@ -6,6 +6,7 @@ import './project-thumbnail.less'
 export const ProjectThumbnail = ({
   location,
   title,
+  description,
   date,
   excerpt,
   featuredImage,
@@ -16,9 +17,13 @@ export const ProjectThumbnail = ({
     {featuredImage ? <Img
       fluid={featuredImage}
     /> : null}
-    <h3 className='h3'>
+    <h4 className='h4'>
+      <strong>
       {title}
-    </h3>
-    <div>{excerpt}</div>
+      </strong>
+      <br />
+      {description}
+      Novo site institucional
+    </h4>
   </Link>
 )
