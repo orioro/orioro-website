@@ -149,10 +149,10 @@ const HomePage = ({
                     Ajudamos nossos clientes a tomar decisões estratégicas com base no comportamento real das pessoas:
                   </p>
                   <p>
-                    <strong>Se a recepção foi positiva:</strong><br />Investir, aprimorar e desenvolver a tecnologia
+                    <strong>_Se a recepção foi positiva:</strong><br />Investir, aprimorar e desenvolver a tecnologia
                   </p>
                   <p>
-                    <strong>Se os resultados foram negativos:</strong><br />Rapidamente investigar e projetar novos caminhos
+                    <strong>_Se os resultados foram negativos:</strong><br />Rapidamente investigar e projetar novos caminhos
                   </p>
                     {/*
 
@@ -183,12 +183,24 @@ const HomePage = ({
                     */}
                 </div>
               </li>
+              <li className='m-bottom-3'>
+                <h3 className='h3 m-bottom-7 fg-orange'><span>5.</span><br/>
+                Lançar o MVP da solução</h3>
+                <div className='oo-rich-text'>
+                  <Img fluid={data.image_5_lancar.childImageSharp.fluid} />
+                  <p>
+                    Com base nos aprendizados obtidos e na prioridade de funcionalidades, criamos o <strong>mínimo produto viável</strong> e ajudamos nossos clientes no processo de lançamento.
+                  </p>
+                </div>
+              </li>
             </ol>
           </div>
         </div>
       </div>
     </ContentSection>
 
+    {/*
+       Aguardando comentários/depoimentos
     <ContentSection
       backgroundColor='orange'>
       <div className='row m-bottom-3'>
@@ -232,6 +244,8 @@ const HomePage = ({
         </div>
       </div>
     </ContentSection>
+    */}
+
     <ContentSection
       backgroundColor='light-grey'>
       <div className='row m-bottom-4'>
@@ -327,6 +341,13 @@ export const query = graphql`
       }
     }
     image_4_decidir: file(relativePath: { eq: "assets/home/4_decidir_com_base_em_comportamento.jpg" }) {
+      childImageSharp {
+        fluid(maxWidth: 800) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    image_5_lancar: file(relativePath: { eq: "assets/home/5_lancar_mvp_produto_app_plataforma.jpg" }) {
       childImageSharp {
         fluid(maxWidth: 800) {
           ...GatsbyImageSharpFluid

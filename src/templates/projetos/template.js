@@ -34,6 +34,7 @@ export default ({
       </div>
       <div className='row m-bottom-8'>
         <div className='col-md-9 offset-md-3 m-bottom-4'>
+          <h2>{project.frontmatter.description}</h2>
           <div
             className='oo-rich-text m-top-4'
             dangerouslySetInnerHTML={{ __html: project.html }} />
@@ -49,7 +50,7 @@ export default ({
           <div>{project.frontmatter.year}</div>
         </div> : null}
         {project.frontmatter.scope ? <div className='col-md-3'>
-          <h4 className='m-bottom-10'><strong>Escopo</strong></h4>
+          <h4 className='m-bottom-10'><strong>Atividades realizadas</strong></h4>
           <ul className='list-reset'>
             {project.frontmatter.scope.map(({ title, description }, index) => (
               <li
