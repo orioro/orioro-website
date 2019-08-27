@@ -2,7 +2,7 @@
 title: Nova Escola
 date: "2018-05-06T00:00:00Z"
 description: "Plataforma digital de planos de aula para professores"
-featuredImage: './images/nova-escola-planos-de-aula-slides.png'
+featuredImage: './images/nova-escola-entrevista-professora-teste-usabilidade.jpg'
 images:
 - path: './images/nova-escola-dinamica.jpg'
 - path: './images/nova-escola-entrevista-noticias.jpg'
@@ -24,5 +24,6 @@ scope:
 - title: 'Prototipação'
   description: '(design gráfico, design de interface e programação)'
 - title: 'Validação com usuários'
+- title: 'Programação web (frontend)'
 website: 'https://novaescola.org.br/plano-de-aula'
 ---

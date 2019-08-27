@@ -12,10 +12,10 @@ const MAIN_MENU_LINKS = [
     label: 'Home',
     href: '/'
   },
-  {
-    label: 'Quem somos',
-    href: '/sobre'
-  },
+  // {
+  //   label: 'Quem somos',
+  //   href: '/sobre'
+  // },
   // {
   //   label: 'Nosso jeito de trabalhar',
   //   href: '/como-trabalhamos',
@@ -45,7 +45,7 @@ export const MainMenu = ({}) => {
     {typeof document !== 'undefined' && ReactDOM.createPortal(
       <div
         id='main-menu'>
-        <div className='website-side-padding website-max-width p-top-5'>
+        <div className='website-side-padding website-max-width p-top-5 p-bottom-1'>
           <div className='row'>
             <div className='col-md-5 offset-md-1'>
               <nav>
