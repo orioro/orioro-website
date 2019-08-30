@@ -7,8 +7,6 @@ import { ContentSection } from '../components/ContentSection/ContentSection'
 import { graphql } from 'gatsby'
 import Img from 'gatsby-image'
 
-import SubDirectoryArrowRightIcon from '@material-ui/icons/SubDirectoryArrowRight'
-
 import { ProjectThumbnail } from '../components/ProjectThumbnail/ProjectThumbnail'
 
 import './style.less'
@@ -265,6 +263,7 @@ const HomePage = ({
                 title={node.frontmatter.title}
                 description={node.frontmatter.description}
                 date={node.frontmatter.date}
+                scope={node.frontmatter.scope}
                 excerpt={node.excerpt}
                 featuredImage={node.frontmatter.featuredImage ?
                   node.frontmatter.featuredImage.childImageSharp.fluid :
@@ -310,6 +309,10 @@ export const query = graphql`
                   ...GatsbyImageSharpFluid
                 }
               }
+            }
+            scope {
+              title
+              description
             }
           }
           excerpt

@@ -10,6 +10,7 @@ export const ProjectThumbnail = ({
   date,
   excerpt,
   featuredImage,
+  scope,
 }) => (
   <Link
     className='oo-project-thumbnail oo-composition-vertical-spacing'
@@ -24,5 +25,6 @@ export const ProjectThumbnail = ({
       <br />
       {description}
     </h4>
+
   </Link>
 )

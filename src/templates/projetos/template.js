@@ -101,6 +101,7 @@ export default ({
               title={node.frontmatter.title}
               description={node.frontmatter.description}
               date={node.frontmatter.date}
+              scope={node.frontmatter.scope}
               excerpt={node.excerpt}
               featuredImage={node.frontmatter.featuredImage ?
                 node.frontmatter.featuredImage.childImageSharp.fluid :
