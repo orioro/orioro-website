@@ -49,7 +49,7 @@ export const Header = ({ siteTitle }) => {
     ref={headerRef}
     id='main-header'
     className={`bg-white ${classnames({
-      'far-from-top': height > 0 && previousScrollTop < scrollTop && scrollTop > height,
+      'far-from-top': height > 0 && previousScrollTop <= scrollTop && scrollTop > height,
     })}`}>
     <div className='website-side-padding website-max-width'>
       <Link

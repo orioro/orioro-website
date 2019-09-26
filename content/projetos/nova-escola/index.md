@@ -4,6 +4,9 @@ date: "2018-05-06T00:00:00Z"
 description: "Plataforma digital de planos de aula para professores"
 featuredImage: './images/nova-escola-entrevista-professora-teste-usabilidade.jpg'
 images:
+- path: './images/nova-escola-desktop.png'
+- path: './images/nova-escola-responsivo.png'
+- path: './images/nova-escola-paginas-internas.png'
 - path: './images/nova-escola-dinamica.jpg'
   caption: 'Aplicamos dinâmicas de co-criação - cardsorting -  para coletar impressões dos usuários sobre a arquitetura do site'
 - path: './images/nova-escola-entrevista-noticias.jpg'
@@ -17,11 +20,14 @@ images:
 - path: './images/nova-escola-teste-planos-de-aula-site-2.jpg'
   caption: 'Fizemos entrevistas com professores e entendemos melhor os fluxos de pensamento e as jornadas de preparação de aulas.'
 - path: './images/nova-escola-teste-planos-de-aula-prototipo.jpg'
+<<<<<<< HEAD
   caption: 'Criamos protótipos e apresentamos a professores, para coletar impressões sobre o uso e entender o que poderia ser aprimorado.'
 - path: './images/nova-escola-planos-de-aula-filtros-atividades.png'
 - path: './images/nova-escola-planos-de-aula-filtros.png'
 - path: './images/nova-escola-planos-de-aula-infantil.png'
 - path: './images/nova-escola-planos-de-aula-slides.png'
+=======
+>>>>>>> 9b2a3bd9eb4b7ed8b65538e7a2fd8d95e16a98df
 headingSectionBg: white
 imageSectionBg: light-grey
 year: 2018
