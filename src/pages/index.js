@@ -17,7 +17,7 @@ const HomePage = ({
   data
 }) => {
   return <Layout>
-    <SEO title='Home' />
+    <SEO title='ORI:ORO | Consultoria de design digital com foco em processos de inovação' />
     <ContentSection>
       <div className='row p-top-3'>
         <div className='col-sm-7 offset-sm-1'>
@@ -149,10 +149,10 @@ const HomePage = ({
                     Ajudamos nossos clientes a tomar decisões estratégicas com base no comportamento real das pessoas:
                   </p>
                   <p>
-                    <strong>_Se a recepção foi positiva:</strong><br />Investir, aprimorar e desenvolver a tecnologia
+                    <strong>· Se a recepção foi positiva:</strong><br />Investir, aprimorar e desenvolver a tecnologia
                   </p>
                   <p>
-                    <strong>_Se os resultados foram negativos:</strong><br />Rapidamente investigar e projetar novos caminhos
+                    <strong>· Se os resultados foram negativos:</strong><br />Rapidamente investigar e projetar novos caminhos
                   </p>
                     {/*
 
@@ -249,12 +249,34 @@ const HomePage = ({
     <ContentSection
       backgroundColor='light-grey'>
       <div className='row m-bottom-4'>
-        <div className='col-12'>
+        <div className='col-sm-7 offset-sm-1'>
           <h2 className='h1'>
             Projetos que fizemos:
           </h2>
         </div>
       </div>
+
+      {/*
+      <div className='row'>
+        <div className='col-sm-10 offset-sm-1'>
+          <ul className='list list--3'>
+            {data.projects.edges.map(({ node }, index) => <li key={index}>
+              <ProjectThumbnail
+                location={node.fields.slug}
+                title={node.frontmatter.title}
+                description={node.frontmatter.description}
+                date={node.frontmatter.date}
+                excerpt={node.excerpt}
+                featuredImage={node.frontmatter.featuredImage ?
+                  node.frontmatter.featuredImage.childImageSharp.fluid :
+                  null
+                }
+              />
+            </li>)}
+          </ul>
+        </div>
+      </div>
+      */}
 
       <div className='row'>
         <div className='col-12'>

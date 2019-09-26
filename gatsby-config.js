@@ -1,8 +1,10 @@
 module.exports = {
   siteMetadata: {
     title: 'ORI:ORO',
-    description: 'Somos uma consultoria de design digital com foco em processos de inovação',
+    description: 'Consultoria de design digital com foco em processos de inovação',
     author: 'orioro',
+    url: "https://orioro.design/",
+    image: "/images/orioro-consultoria-design-digital-ux.jpg", // Path to your image you placed in the 'static' folder
   },
   plugins: [
     {
