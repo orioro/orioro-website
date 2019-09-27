@@ -2,9 +2,9 @@
 title: Constellation
 date: "2019-05-06T00:00:00Z"
 description: "Website institucional para gestora de investimentos"
-featuredImage: './images/constellation-capa.png'
+featuredImage: './images/constellation-capa.jpg'
 images:
-- path: './images/constellation-paginas-internas.png'
+- path: './images/constellation-paginas-internas_edit.png'
 - path: './images/constellation-desktop.png'
 headingSectionBg: white
 imageSectionBg: light-grey

@@ -2,7 +2,7 @@
 title: Harmonia Acústica
 date: "2017-05-06T00:00:00Z"
 description: "Performace para garantir navegação elegante e fluida para os usuários do site institucional.  "
-featuredImage: './images/harmonia-acustica-capa.png'
+featuredImage: './images/harmonia-acustica-capa.jpg'
 images:
 - path: './images/harmonia-acustica-projetos.png'
 - path: './images/harmonia-acustica-responsivo.png'

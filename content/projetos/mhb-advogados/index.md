@@ -4,7 +4,6 @@ date: '2018-05-01T22:12:03.284Z'
 description: 'Site para escritório de advocacia especializado em direito público e regulação'
 featuredImage: './images/mhb-cenario.png'
 images:
-- path: './images/mhb-cenario.png'
 - path: './images/mhb-desktop.png'
 - path: './images/mhb-home.png'
 headingSectionBg: white

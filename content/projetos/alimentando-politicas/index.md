@@ -2,7 +2,7 @@
 title: Alimentando Políticas - Idec
 date: '2019-05-01T22:12:03.284Z'
 description: 'Website para o projeto dedicado à mudança da saúde pública brasileira'
-featuredImage: './images/alimentando-politicas-capa3.png'
+featuredImage: './images/alimentando-politicas-capa4.jpeg'
 images:
 - path: './images/alimentando-politicas-desktop.png'
 - path: './images/alimentando-politicas-card.png'
