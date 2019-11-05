@@ -20,7 +20,10 @@ const HomePage = ({
       <div className='row p-top-3'>
         <div className='col-sm-7 offset-sm-1'>
           <h1>
+            Somos um <br className='d-md-none'/>estúdio de design e desenvolvimento digital com foco em processos de inovação
+          {/*
             Somos uma consultoria de design digital com foco em processos de inovação
+          */}
 
           {/*
             Somos um estúdio de design de serviços digitais com foco em inovação
@@ -31,7 +34,7 @@ const HomePage = ({
       <div className='row m-top-4'>
         <div className='col-sm-7 offset-sm-1'>
           <h2>
-            Ajudamos empresas e organizações a <strong>criar apps, sites e plataformas</strong> com base no <strong>comportamento das pessoas</strong>
+            Ajudamos empresas e organizações a <strong>criar apps, sites e plataformas</strong> com base na <strong>observação e análise do comportamento das pessoas</strong>
           </h2>
           {/*
 
@@ -57,13 +60,13 @@ const HomePage = ({
             <ol className='list-reset oo-steps'>
               <li className='m-bottom-3'>
                 <h3 className='h3 m-bottom-7 fg-orange'><span>1.</span><br/>
-                Entender o público-alvo</h3>
+                Entender a jornada do usuário</h3>
                 <div className='oo-rich-text'>
                   <Img fluid={data.image_1_entender.childImageSharp.fluid} />
                   <p>
                     {/* Falar o que é: app, site ou plataforma */}
 
-                    Antes de desenvolver qualquer tecnologia, é crucial entender as necessidades do público-alvo.
+                    Antes de desenvolver qualquer tecnologia, é crucial entender as necessidades das pessoas que queremos atender.
                   </p>
                   <p>
                     {/* Falar como é factualmente esse passo */}
@@ -183,12 +186,21 @@ const HomePage = ({
               </li>
               <li className='m-bottom-3'>
                 <h3 className='h3 m-bottom-7 fg-orange'><span>5.</span><br/>
-                Lançar o MVP da solução</h3>
+                Lançar o Mínimo Produto Viável (MVP) da solução</h3>
                 <div className='oo-rich-text'>
                   <Img fluid={data.image_5_lancar.childImageSharp.fluid} />
                   <p>
+                    Com base nos aprendizados obtidos, desenvolvemos a tecnologia necessária, priorizando as funcionalidades pela sua importância estratégica para o negócio. <strong>O que é crucial para a primeira versão?</strong> O que deve ficar para uma segunda etapa de desenvolvimento?
+                  </p>
+
+                  <p>
+                    Para além da tecnologia, o lançamento de um produto envolve muitas outras questões práticas: qual é a equipe e quais são as competências necessárias para operacionalizar o serviço? Quais são os critérios de sucesso e falha do produto? Ajudamos nossos clientes a desenhar o <strong>plano operacional</strong> e implementar uma <strong>estratégia de metrificação</strong> de uso do sistema.
+                  </p>
+                  {/*
+                  <p>
                     Com base nos aprendizados obtidos e na prioridade de funcionalidades, criamos o <strong>mínimo produto viável</strong> e ajudamos nossos clientes no processo de lançamento.
                   </p>
+                  */}
                 </div>
               </li>
             </ol>
