@@ -34,7 +34,7 @@ const HomePage = ({
       <div className='row m-top-4'>
         <div className='col-sm-7 offset-sm-1'>
           <h2>
-            Ajudamos empresas e organizações a <strong>criar apps, sites e plataformas</strong> com base na <strong>observação e na análise do comportamento das pessoas</strong>
+            Ajudamos empresas e organizações a <strong>criar apps, sites e plataformas</strong> com base na <strong>observação e análise do comportamento das pessoas</strong>
           </h2>
           {/*
 
