@@ -7,7 +7,7 @@ export const ContactCard = () => <div className='oo-contact-card'>
   <strong>Fale com a gente:</strong> <br />
   <a
     className='d-block'
-    href='mailto:hello@habem.us'>
-    hello@habem.us
+    href='mailto:contato@orioro.design'>
+    contato@orioro.design
   </a>
 </div>

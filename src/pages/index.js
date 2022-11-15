@@ -20,21 +20,14 @@ const HomePage = ({
       <div className='row p-top-3'>
         <div className='col-sm-7 offset-sm-1'>
           <h1>
-            Somos um <br className='d-md-none'/>estúdio de design e desenvolvimento digital com foco em processos de inovação
-          {/*
-            Somos uma consultoria de design digital com foco em processos de inovação
-          */}
-
-          {/*
-            Somos um estúdio de design de serviços digitais com foco em inovação
-          */}
+            Se a tecnologia molda a sociedade, a sociedade deve moldar a tecnologia.
           </h1>
         </div>
       </div>
       <div className='row m-top-4'>
         <div className='col-sm-7 offset-sm-1'>
           <h2>
-            Ajudamos empresas e organizações a <strong>criar apps, sites e plataformas</strong> com base na <strong>observação e análise do comportamento das pessoas</strong>
+            A <strong>ORI:ORO</strong> é uma <strong>organização sem fins lucrativos</strong> que apoia <strong>organizações da sociedade civil e governos</strong> no desenvolvimento de <strong>Tecnologia de Interesse Público</strong> através de processos de <strong>inovação participativa</strong>.
           </h2>
           {/*
 
